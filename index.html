@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>💌 작은 편지가 도착했어요</title>
 <meta name="description" content="혜령이를 위한 작은 편지가 도착했어요 💗">
 
@@ -63,34 +62,22 @@ button {
 
 <div class="box">
 
-<!-- 처음 화면 -->
 <div id="main">
-    <div class="envelope">💌</div>
-
-    <h1>혜령이를 위한 편지</h1>
-
-    <p>작은 편지가 도착했어요!</p>
-
-    <button onclick="openLetter()">
-        편지 열기 💗
-    </button>
+<div class="envelope">💌</div>
+<h1>혜령이를 위한 편지</h1>
+<p>작은 편지가 도착했어요!</p>
+<button onclick="openLetter()">편지 열기 💗</button>
 </div>
 
-<!-- 편지 -->
 <div id="letter">
-
-    <h1>혜령아 ♡</h1>
-
-    <p class="letter-text" id="letterText"></p>
-
-    <p>— 예준이가 ㅡ</p>
-
+<h1>혜령아 ♡</h1>
+<p class="letter-text" id="letterText"></p>
+<p>— 예준이가 ㅡ</p>
 </div>
 
 </div>
 
 <script>
-
 const message = `틱톡에 떠서 한 번 해보고 싶엇어..ㅎ
 얼른 혜령이 보고 싶어
 
@@ -101,20 +88,15 @@ const message = `틱톡에 떠서 한 번 해보고 싶엇어..ㅎ
 
 document.getElementById("letterText").textContent = message;
 
-
-/* 사이트를 다시 들어올 때마다
-   무조건 처음 화면부터 시작 */
 window.addEventListener("pageshow", function() {
     document.getElementById("main").style.display = "block";
     document.getElementById("letter").style.display = "none";
 });
 
-
 function openLetter() {
     document.getElementById("main").style.display = "none";
     document.getElementById("letter").style.display = "block";
 }
-
 </script>
 
 </body>
