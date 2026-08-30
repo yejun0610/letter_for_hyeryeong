@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>💌 작은 편지가 도착했어요</title>
+<meta name="description" content="혜령이를 위한 작은 편지가 도착했어요 💗">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffeef4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #0002;
+    width: 80%;
+    max-width: 400px;
+}
+
+.envelope {
+    font-size: 80px;
+}
+
+h1 {
+    color: #ff6f9c;
+}
+
+button {
+    border: 0;
+    background: #ff7fa8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#letter {
+    display: none;
+}
+
+.letter-text {
+    white-space: pre-line;
+    line-height: 1.8;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+```
+<!-- 처음 화면 -->
+<div id="main">
+    <div class="envelope">💌</div>
+
+    <h1>혜령이를 위한 편지</h1>
+
+    <p>작은 편지가 도착했어요!</p>
+
+    <button onclick="openLetter()">
+        편지 열기 💗
+    </button>
+</div>
+
+<!-- 편지 -->
+<div id="letter">
+
+    <h1>혜령아 ♡</h1>
+
+    <p class="letter-text" id="letterText"></p>
+
+    <p>— 예준이가 ㅡ</p>
+
+</div>
+```
+
+</div>
+
+<script>
+
+const message = `틱톡에 떠서 한 번 해보고 싶엇어..ㅎ
+얼른 혜령이 보고 싶어
+
+혜령이 힘들지 않게 앞으로 내가 잘 할테니까
+우리 오래오래 서로 사랑해주자
+
+많이 사랑해 💗`;
+
+document.getElementById("letterText").textContent = message;
+
+
+/* 사이트를 다시 들어올 때마다
+   무조건 처음 화면부터 시작 */
+window.addEventListener("pageshow", function() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("letter").style.display = "none";
+});
+
+
+function openLetter() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
