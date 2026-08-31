@@ -44,6 +44,7 @@ button {
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
+    margin: 5px;
 }
 
 #letter {
@@ -53,6 +54,20 @@ button {
 .letter-text {
     white-space: pre-line;
     line-height: 1.8;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-number {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 15px;
 }
 </style>
 
@@ -70,33 +85,197 @@ button {
 </div>
 
 <div id="letter">
+
+<div class="page active">
+<h1>혜령이에게</h1>
+<p class="letter-text">혜령아! 우리 만난지 벌써 100일이야!
+
+남들은 '아직 100일 밖에 안됐어?' 라지만
+나에겐 너무나도 소중한 100일이였어
+(앞으로 더 오래 볼테지만!)
+
+100일이면 대략 3개월 좀 넘는데
+이렇게 보니까 엄청 길어보이지 않아?
+
+혜령이랑 여태껏 쌓아온 추억들과
+좋은 기억들을 생각하면 시간이 참 빠른 거 같아
+
+우리 처음 만났을 땐
+서로를 많이 미워하기도 했고
+
+다시 재회 했을 땐
+서로에게 선 따윈 없이 장난이 오고갔고
+
+지금 혜령이를 사랑할 땐
+서로만 바라보고 말야</p>
+
+<p class="page-number">1 / 4</p>
+<button onclick="nextPage()">다음 페이지 💗</button>
+</div>
+
+
+<div class="page">
 <h1>혜령아 ♡</h1>
-<p class="letter-text" id="letterText"></p>
-<p>— 예준이가 ㅡ</p>
+<p class="letter-text">처음엔 혜령이와 이렇게까지
+관계가 깊어질 줄은 몰랐어
+
+그러나 혜령이가 나를 마구 귀엽다 해주고
+서로 밤마다 진지한 대화가 오고 갈 때
+
+'아, 이 사람 없으면 난 무너지겠다'
+라고 와닿았어
+
+물론 당시 정신병이 많이 심했을 때라지만
+그게 아니였어도 이렇게까지
+
+나를 격려해주고 돌봐주고
+누군가를 진심으로 기다릴 수 있게 된다는 게
+
+혜령이란 사람이 나에겐
+없어선 안 될 존재처럼 느껴졌어
+
+원래 나는 자존심이 되게 셌거든..
+그래서 신비주의 컨셉이나 할 말만 하고 사는 성격이였어
+
+혜령이와 썸을 탈 땐
+저런 게 아무 의미가 없어지더라</p>
+
+<p class="page-number">2 / 4</p>
+<button onclick="prevPage()">← 이전</button>
+<button onclick="nextPage()">다음 페이지 💗</button>
+</div>
+
+
+<div class="page">
+<h1>혜령아 ♡</h1>
+<p class="letter-text">남들이 옆에서 에겐남이라고 해도
+아랑곳 안 하고 혜령이한텐 내 전부를 보여주고 싶었어
+
+현생에서 이루어진 관계보다
+사이버에서 이루어진 아니,
+
+혜령이라는 사람과 이어지는 관계가
+더욱 간절하고 소중했어
+
+그래서 점점 시간이 가면 갈수록
+잘못된 방향으로 어긋나려고 했었어
+
+별 것도 아닌 걸로 혜령이에게
+집착하고, 심술내고, 기분이 태도가 되고 말야
+
+매번 이럴 때 마다
+진심으로 미안하고 마음이 아팠어..
+
+그럼에도 혜령이는
+어떤식이던 다 괜찮다고 날 감싸안아줬어
+
+저렇게 행동하고
+내가 내 입으로 잘못됐다고 인지할 정도로
+
+스트레스 많이 받을 행동이였을텐데
+그만큼 혜령이가 날 사랑해준다는 거에
+
+여태껏 느껴본 적 없는
+많은 감정이 오고갔어</p>
+
+<p class="page-number">3 / 4</p>
+<button onclick="prevPage()">← 이전</button>
+<button onclick="nextPage()">다음 페이지 💗</button>
+</div>
+
+
+<div class="page">
+<h1>혜령아 ♡</h1>
+<p class="letter-text">정말...
+
+혹여나 혜령이가
+무슨 일이라도 생긴 건 아닐까 하는 날엔
+하루종일 심장이 부웅 뜨고 온몸이 저릿해왔고
+
+정말 오랜만에 혜령이를
+만나는 날엔 얼굴을 보자마자
+같이 있는 내내 심장이 간질간질했어
+
+내가 혜령이를 오랜만에 만나는 날엔
+평소와 달리 많은 애정표현을 못 하는 이유는..
+
+너무 부끄러..
+100일이나 됐는데 장거리다보니
+
+혜령이 얼굴만 봐도 너무 이뻐서 눈도 못 마주치겠고
+내 섣부른 행동들이 정뚝떨 요소가 될까봐도 글코..
+
+물론 지금보면 다 말 같지도 않은 소리긴해!
+혜령이가 날 그렇게 사랑해주는데 혼자 쓸데없는 걱정이나 하고 말야
+
+다음부턴 혜령이 보는 날엔
+먼저 꼬옥 안아주고 마구 이뻐할거야
+
+이젠 스스로 꿍해있을 게 아니라
+모든 걸 터놓을 시기가 됐으니까 말야
+
+아직 너무나도 미숙하고
+모자람 많은 나지만
+
+완벽한 너를 따라가려고
+많이 노력하고 있어..!
+
+더욱 혜령이를 책임져줄 사람이 될테니
+혜령이가 옆에서 꼭꼭 지켜봐줘
+
+우리의 100일을 축하해주자!
+100년까지 더 함께 할 수 있지?
+
+나와 함께해줘서 늘 고마워
+진심으로 사랑해💗
+
+-너의 오빠야 예준이가-
+(내가 너보다 오빠인 거 알지?)</p>
+
+<p class="page-number">4 / 4</p>
+<button onclick="prevPage()">← 이전 페이지</button>
+</div>
+
 </div>
 
 </div>
 
 <script>
-const message = `틱톡에 떠서 한 번 해보고 싶엇어..ㅎ
-얼른 혜령이 보고 싶어
 
-혜령이 힘들지 않게 앞으로 내가 잘 할테니까
-우리 오래오래 서로 사랑해주자
-
-많이 사랑해 💗`;
-
-document.getElementById("letterText").textContent = message;
-
-window.addEventListener("pageshow", function() {
-    document.getElementById("main").style.display = "block";
-    document.getElementById("letter").style.display = "none";
-});
+let currentPage = 0;
 
 function openLetter() {
     document.getElementById("main").style.display = "none";
     document.getElementById("letter").style.display = "block";
 }
+
+function showPage(page) {
+    const pages = document.querySelectorAll(".page");
+
+    if (page < 0 || page >= pages.length) return;
+
+    pages.forEach(function(p) {
+        p.classList.remove("active");
+    });
+
+    pages[page].classList.add("active");
+    currentPage = page;
+}
+
+function nextPage() {
+    showPage(currentPage + 1);
+}
+
+function prevPage() {
+    showPage(currentPage - 1);
+}
+
+window.addEventListener("pageshow", function() {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("letter").style.display = "none";
+    showPage(0);
+});
+
 </script>
 
 </body>
