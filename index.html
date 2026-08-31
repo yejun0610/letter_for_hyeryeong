@@ -86,8 +86,10 @@ button {
 
 <div id="letter">
 
+<!-- 1페이지 -->
 <div class="page active">
 <h1>혜령이에게</h1>
+
 <p class="letter-text">혜령아! 우리 만난지 벌써 100일이야!
 
 남들은 '아직 100일 밖에 안됐어?' 라지만
@@ -110,10 +112,12 @@ button {
 서로만 바라보고 말야</p>
 
 <p class="page-number">1 / 4</p>
+
 <button onclick="nextPage()">다음 페이지 💗</button>
 </div>
 
 
+<!-- 2페이지 -->
 <div class="page">
 
 <p class="letter-text">처음엔 혜령이와 이렇게까지
@@ -141,11 +145,13 @@ button {
 저런 게 아무 의미가 없어지더라</p>
 
 <p class="page-number">2 / 4</p>
+
 <button onclick="prevPage()">← 이전</button>
 <button onclick="nextPage()">다음 페이지 💗</button>
 </div>
 
 
+<!-- 3페이지 -->
 <div class="page">
 
 <p class="letter-text">남들이 옆에서 에겐남이라고 해도
@@ -179,11 +185,13 @@ button {
 많은 감정이 오고갔어</p>
 
 <p class="page-number">3 / 4</p>
+
 <button onclick="prevPage()">← 이전</button>
 <button onclick="nextPage()">다음 페이지 💗</button>
 </div>
 
 
+<!-- 4페이지 -->
 <div class="page">
 
 <p class="letter-text">정말...
@@ -233,6 +241,7 @@ button {
 (내가 너보다 오빠인 거 알지?)</p>
 
 <p class="page-number">4 / 4</p>
+
 <button onclick="prevPage()">← 이전 페이지</button>
 </div>
 
@@ -250,6 +259,7 @@ function openLetter() {
 }
 
 function showPage(page) {
+
     const pages = document.querySelectorAll(".page");
 
     if (page < 0 || page >= pages.length) return;
@@ -259,6 +269,7 @@ function showPage(page) {
     });
 
     pages[page].classList.add("active");
+
     currentPage = page;
 }
 
@@ -271,9 +282,12 @@ function prevPage() {
 }
 
 window.addEventListener("pageshow", function() {
+
     document.getElementById("main").style.display = "block";
     document.getElementById("letter").style.display = "none";
+
     showPage(0);
+
 });
 
 </script>
